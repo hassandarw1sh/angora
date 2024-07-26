@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="bg-black" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/all.min.css">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+ <div id="sideNav" >
+   <div class="contactSide flex flex-col justify-between" >
+     
+      <div >
+        <ul>
+          <li class="opacity-0 text-cyan-50 py-[20rem] playing"><a  class="hover:text-red-600" href="#playing">Now playing</a></li>
+          <li class="opacity-0 text-cyan-50 py-[20rem] "id="trending" ><a class="hover:text-red-600" href="#" >Trending</a></li>
+          <li class="opacity-0 text-cyan-50 py-[20rem] popular" ><a class="hover:text-red-600" href="#">Popular</a></li>
+          <li class="opacity-0 text-cyan-50 py-[20rem] TopRated" ><a class="hover:text-red-600" href="#">Top Rated</a></li>
+          <li class="opacity-0 text-cyan-50 py-[20rem] Upcoming" ><a class="hover:text-red-600" href="#">Upcoming</a></li>
+          <li class="opacity-0 text-cyan-50 py-[20rem]  nav-item  hover:text-red-600" ><a href="#Cosntact" >Contact Us</a></li>
+      </ul>
+      </div>
+    <div class="copyrights">
+      <div >
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+      </div>
+      <p class="pt-3 text-cyan-50">Copyright © 2040 All Rights Reserved. <br>Created by <a href="https://github.com/hassandarwish2002" class="link-danger fw-bold hover:text-red-600" target="_blank">Hassan Darwish</a></p>
+  </div>
+   </div>
+        <div class="sideicon bg-gray-400 flex flex-col justify-between h-full" id="iconSide">
+          <div class="">
+
+            <span class="self-center">
+              <i class="fa-4x fab fa-apple"></i>
+             </span>
+          </div>
+          <div id="sideicon">
+
+            <button id="btn-hamburger">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </button>
+          </div>
+          <div class="flex flex-col">
+
+            <span>
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+             </span>
+          </div>
+          
+        </div>
+
+    </div>
+
+  <div class="container mx-auto  mt-4  text-center" >
+    <input type="text"  class="w-[50%] h-12 bg-white pl-2 text-base font-semibold outline-0 rounded-md " placeholder="search" id="search" />
+      <input type="button" value="search" class="bg-blue-500 p-2 rounded-tr-lg rounded-br-lg text-white font-semibold hover:bg-blue-800 transition-colors"/>
+  </div>
+ <section id="playing">
+  <div class="container mx-auto mt-40 ">
+    <div class="row gap-y-3 " id="row">
+     
+
+
+    </div>
+  </div>
+
+ </section>
+
+ <section id="Contact" class="container mx-auto py-10">
+  <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+  <form>
+      <div class="row box-content gap-2 justify-center">
+          <div class="md:w-5/12 w-full ">
+              <input type="text" required="" id="name" maxlength="37" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="Enter Your Name">
+              <span class="text-red-500 text-sm error"></span>
+          </div>
+          <div class="md:w-5/12 w-full">
+              <input type="email" required="" id="email" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="Enter Your Email">
+              <span class="text-red-500 text-sm error"></span>
+          </div>
+          <div class="md:w-5/12 w-full">
+              <input type="number" required="" id="phone" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="Enter Your Phone">
+              <span class="text-red-500 text-sm error"></span>
+          </div>
+          <div class="md:w-5/12 w-full">
+              <input type="number" required="" id="age" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="Enter Your Age">
+              <span class="text-red-500 text-sm error"></span>
+          </div>
+          <div class="md:w-5/12 w-full">
+              <input type="password" required="" id="password" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="Enter Your Password">
+              <span class="text-red-500 text-sm error"></span>
+              <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-200">
+                
+              </span>
+          </div>
+          <div class="md:w-5/12 w-full">
+              <input type="password" required="" id="repassword" class="form-input mt-4 w-full px-4 py-2 rounded border border-gray-600 bg-gray-700 placeholder-gray-400" placeholder="ReEnter Password">
+              <span class="text-red-500 text-sm error"></span>
+          </div>
+          <div class="col-span-2 mx-auto mt-4 md:w-2/12">
+              <button type="submit" class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-transform transform active:scale-95">
+                  Submit
+              </button>
+          </div>
+      </div>
+  </form>
+</section>
+<script src="/src/jquery.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
