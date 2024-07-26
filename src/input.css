@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.row{
+    @apply flex flex-wrap;
+}
+@layer base {
+    #sideNav{
+  
+        /* width: 300px; */
+        position: fixed  ;
+        display: flex;
+        /* flex-direction: column;
+        justify-content: center; */
+        /* align-content: center; */
+        /* top:50% ; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        /* background-color: red; */
+        z-index: 5900;
+      }
+      #sideNav .sideicon{
+        position: relative;
+        
+        background-color: #fbfcfd;
+        padding:2px ;
+        align-self: center;
+        /* border-radius:7px 0 0 7px ; */
+      }
+      .contactSide{
+        position: relative;
+        padding: 20px;
+        background-color: black;
+      }
+      #btn-hamburger {
+        
+        border:none;
+        outline:0;
+        /* background: black;  */
+        border-radius: 3px;
+        padding: .6em;
+        cursor: pointer;
+        .line-1, .line-2, .line-3 {
+          width: 22px;
+          height: 2px;
+          background-color: orange;
+          margin: 4px 0;
+          transition: 0.4s;
+        }
+        &.animeOpenClose .line-1 {
+          -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+          transform: rotate(-45deg) translate(-4px, 4px);
+        }
+        &.animeOpenClose .line-2 {
+          opacity: 0;
+        }
+        &.animeOpenClose .line-3 {
+          -webkit-transform: rotate(45deg) translate(-4px, -4px);
+          transform: rotate(45deg) translate(-4px, -4px);
+        }
+      }
+    
+}
+
