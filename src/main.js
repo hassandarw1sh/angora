@@ -80,10 +80,8 @@ $("#search").on("input", function(e){
 
 
 
-/// in object const {top:nab}={top,left} => console.log(nab)
-$('#navtop')
-            .on("click", function () {   $('html,body')
-                                                       .animate({scrollTop:"0"},300)})// smooth scroll
+
+
 
 
 
